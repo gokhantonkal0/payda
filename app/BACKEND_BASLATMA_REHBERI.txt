@@ -1,0 +1,43 @@
+============================================================
+BACKEND BASLATMA REHBERI
+============================================================
+
+1. YONTEM: start_backend.bat dosyasina cift tiklayin
+   (En kolay yontem)
+
+2. YONTEM: Terminal'de calistirin:
+   cd "C:\Users\pc\Desktop\donation_platform - Kopya\app"
+   python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8080
+
+3. YONTEM: PowerShell'de:
+   cd "C:\Users\pc\Desktop\donation_platform - Kopya\app"
+   python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8080
+
+============================================================
+SORUN GIDERME:
+============================================================
+
+Eger "ModuleNotFoundError" hatasi alirsaniz:
+  pip install fastapi uvicorn sqlalchemy
+
+Eger "Port already in use" hatasi alirsaniz:
+  - 8080 portunu kullanan baska bir programi kapatin
+  - Veya farkli bir port kullanin (ornek: 8081)
+
+Eger "No module named 'app'" hatasi alirsaniz:
+  - Terminal'i "donation_platform - Kopya" klasorunde acin
+  - Sonra "cd app" yapin
+
+============================================================
+TEST KULLANICILARI OLUSTURMA:
+============================================================
+
+Test kullanicilarini olusturmak icin:
+  cd "C:\Users\pc\Desktop\donation_platform - Kopya\app"
+  python create_test_users_direct.py
+
+Bu script backend calismasa bile calisir!
+
+============================================================
+
+
