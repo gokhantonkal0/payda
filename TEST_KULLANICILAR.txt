@@ -1,0 +1,35 @@
+============================================================
+TEST KULLANICILARI
+============================================================
+
+IHTIYAC SAHIBI (User Dashboard):
+  Kullanici Adi: test1, Sifre: 123
+  Kullanici Adi: test2, Sifre: 123
+
+BAGISCI (Donor Dashboard):
+  Kullanici Adi: test3, Sifre: 123
+  Kullanici Adi: test4, Sifre: 123
+
+ISLETME (Seller Dashboard):
+  Kullanici Adi: test5, Sifre: 123
+  Kullanici Adi: test6, Sifre: 123
+
+GONULLU (Volunteer - Admin Panel):
+  Kullanici Adi: test7, Sifre: 123
+  Kullanici Adi: test8, Sifre: 123
+
+============================================================
+TEST KULLANICILARINI OLUSTURMAK ICIN:
+============================================================
+
+1. Backend'i baslatin:
+   cd "C:\Users\pc\Desktop\donation_platform - Kopya\app"
+   python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8080
+
+2. Yeni bir terminal acin ve script'i calistirin:
+   cd "C:\Users\pc\Desktop\donation_platform - Kopya\app"
+   powershell -ExecutionPolicy Bypass -File create_test_users.ps1
+
+============================================================
+
+
