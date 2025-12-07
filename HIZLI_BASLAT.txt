@@ -1,0 +1,47 @@
+============================================================
+HIZLI BASLATMA REHBERI
+============================================================
+
+1. BACKEND BASLATMA:
+   - "donation_platform - Kopya" klasorune git
+   - "BASLAT.bat" dosyasina cift tikla
+   VEYA
+   cd "C:\Users\pc\Desktop\donation_platform - Kopya"
+   python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8080
+
+2. FRONTEND BASLATMA:
+   - "payv2" klasorune git
+   - "BASLAT_FRONTEND.bat" dosyasina cift tikla
+   VEYA
+   cd "C:\Users\pc\Desktop\payv2"
+   npm run dev
+
+3. HERSEYI BIRDEN BASLATMA:
+   - "payv2" klasorune git
+   - "BASLAT_HERSEY.bat" dosyasina cift tikla
+   (Bu hem backend hem frontend'i baslatir)
+
+============================================================
+PORTLAR:
+============================================================
+Backend:  http://localhost:8080
+Frontend: http://localhost:5173
+
+============================================================
+SORUN GIDERME:
+============================================================
+
+Eger "Port already in use" hatasi alirsaniz:
+  - O portu kullanan programi kapatin
+  - Veya farkli port kullanin
+
+Eger "npm run dev" calismiyorsa:
+  - npm install yapin
+  - node_modules klasorunu silip tekrar npm install yapin
+
+Eger backend calismiyorsa:
+  - Python'un yuklu oldugundan emin olun
+  - pip install fastapi uvicorn sqlalchemy yapin
+
+============================================================
+
